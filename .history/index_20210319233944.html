@@ -13,11 +13,9 @@
 
     
      <div class="container"> 
-       <header class="header text-center">
       <h1>freeCodeCamp Survey Form</h1>
       <h3>Thank you for taking the time to help us improve the platform</h3>
-    </header>
-      <form class="">
+      <form>
         <div class="form-group">
           <label for="exampleInputName">Name</label>
           <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your Name">
@@ -32,14 +30,21 @@
         </div>
         <div>
           <div class="form-group">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Select an option</option>
-              <option value="1">Student</option>
-              <option value="2">Full Time Jop</option>
-              <option value="3">Full Time Learner</option>
-              <option value="3">Prefer Not To Say</option>
-              <option value="3">Other</option>
-            </select>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Select an option
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Select an option</a></li>
+              <li><a class="dropdown-item" href="#">Student</a></li>
+              <li><a class="dropdown-item" href="#">Full Time Jop</a></li>
+              <li><a class="dropdown-item" href="#">Full Time Learner</a></li>
+              <li><a class="dropdown-item" href="#">Prefer Not To Say</a></li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
+              
+            </ul>
+          </div> 
         </div>
         </div>
         <div class="form-group">
@@ -65,16 +70,26 @@
           </label>
         </div>
       </div>
-        <div class="form-group">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select an option</option>
-            <option value="1">Challanges</option>
-            <option value="2">Projects</option>
-            <option value="3">Community</option>
-            <option value="3">Open Source</option>
-          </select>
+        <div>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Select an option
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Select an option</a></li>
+              <li><a class="dropdown-item" href="#">Challanges</a></li>
+              <li><a class="dropdown-item" href="#">Projects</a></li>
+              <li><a class="dropdown-item" href="#">Community</a></li>
+              <li><a class="dropdown-item" href="#">Open Source</a></li>
+              
+              
+            </ul>
+          </div> 
+
         </div>
-        <div class="form-group">
+
+        
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
@@ -82,71 +97,71 @@
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             Back-end Projects
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             Data Visualization
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             Challenges
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             Open Source Community
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             Gitter help rooms
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             Videos
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             City Meetups
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             Wiki
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             Forum
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
           <label class="form-check-label" for="defaultCheck2">
             Additional Courses
           </label>
         </div>
-      </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Any comments or suggestions?</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your comment here ..."></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Enter your comment here ...</textarea>
         </div>
-        <button type="submit" class="btn btn-success submit-button">Submit</button>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
      </div>
     <script  src="js/index.js"></script>

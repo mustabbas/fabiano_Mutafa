@@ -15,7 +15,7 @@ form{
    background-color: #1b1b32 ;
    padding: 2.5rem;
 }
-label,h1,h3{
+label,h1,h3,li{
     color: white;
 }
 
@@ -30,10 +30,4 @@ label,h1,h3{
 }
 .container{
     width: 60%;
-}
-.submit-button {
-    width: 100%;
-    padding: 0.75rem;
-    border-radius: 2px;
-    cursor: pointer;
 }

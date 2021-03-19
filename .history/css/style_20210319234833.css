@@ -31,9 +31,6 @@ label,h1,h3{
 .container{
     width: 60%;
 }
-.submit-button {
-    width: 100%;
-    padding: 0.75rem;
-    border-radius: 2px;
-    cursor: pointer;
+.dropdown{
+    width: 400px;
 }
