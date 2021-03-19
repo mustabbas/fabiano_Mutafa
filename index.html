@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
 
-     <h1>freeCodeCamp Survey Form</h1>
-     <h3>Thank you for taking the time to help us improve the platform</h3>
-     <div>
+    
+     <div class="container"> 
+      <h1>freeCodeCamp Survey Form</h1>
+      <h3>Thank you for taking the time to help us improve the platform</h3>
       <form>
-        <div class="form-group">
+        <div class="form-group ">
           <label for="exampleInputName">Name</label>
           <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your Name">
         </div>
@@ -25,17 +28,25 @@
           <label for="exampleInputAge">Age(optional)</label>
           <input type="text" class="form-control" id="exampleInputAge" placeholder="Age">
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlOption">Which option best describes your current role?</label>
-          <select multiple class="form-control" id="exampleFormControlOption">
-            <option>Select current role</option>
-            <option>Student</option>
-            <option>Full Time Jop</option>
-            <option>Full Time Learner</option>
-            <option>Prefer Not To Say</option>
-            <option>Other</option>
-          </select>
+        <div>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Select an option
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Select an option</a></li>
+              <li><a class="dropdown-item" href="#">Student</a></li>
+              <li><a class="dropdown-item" href="#">Full Time Jop</a></li>
+              <li><a class="dropdown-item" href="#">Full Time Learner</a></li>
+              <li><a class="dropdown-item" href="#">Prefer Not To Say</a></li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
+              
+            </ul>
+          </div> 
+
         </div>
+        
         <div>
           <label for="exampleFormControlOption">Would you recommend freeCodeCamp to a friend?</label>
         </div>
@@ -57,16 +68,27 @@
             Not sure
           </label>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlOption">What is your favorite feature of freeCodeCamp?</label>
-          <select multiple class="form-control" id="exampleFormControlOption">
-            <option>Select an option</option>
-            <option>Challanges</option>
-            <option>Projects</option>
-            <option>Community</option>
-            <option>Open Source</option>
-          </select>
+
+        <div>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Select an option
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Select an option</a></li>
+              <li><a class="dropdown-item" href="#">Challanges</a></li>
+              <li><a class="dropdown-item" href="#">Projects</a></li>
+              <li><a class="dropdown-item" href="#">Community</a></li>
+              <li><a class="dropdown-item" href="#">Open Source</a></li>
+              
+              
+            </ul>
+          </div> 
+
         </div>
+
+        
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
